@@ -4,15 +4,15 @@ SQL analysis of 462 active CalPERS private equity funds using Google BigQuery, e
 
 ## Key Findings
 
-1. CalPERS' largest manager relationships are not its strongest-performing relationships
+**1. CalPERS' largest manager relationships are not its strongest-performing relationships**
 
 Manager commitment size shows little relationship with observed performance, with correlations of just 0.11 with median Net IRR and 0.19 with median Investment Multiple. Several of the strongest-performing manager relationships also sit outside CalPERS' largest exposures.
 
-2. Performance varies substantially even across repeat manager relationships
+**2. Performance varies substantially even across repeat manager relationships**
 
 Among managers with at least three measurable active funds, median Investment Multiples range from 0.9x to 2.1x, while median Net IRRs range from -1.3% to 27.1%.
 
-3. Strong multiple outcomes are concentrated in a relatively small share of active funds
+**3. Strong multiple outcomes are concentrated in a relatively small share of active funds**
 
 Among 264 active funds with reported Investment Multiples, 92.8% are at or above cost, but only 17.8% have reached 2.0x+ and 4.2% have reached 3.0x+.
 
@@ -39,7 +39,7 @@ Manager performance comparisons require at least three active funds with reporte
 
 ## Important Limitation
 
-The CalPERS Fund Performance Review contains **active partnership investments only and excludes exited partnerships**. The analysis therefore represents a snapshot of the active portfolio and should not be interpreted as complete historical vintage or manager performance.
+The CalPERS Fund Performance Review contains **active investments only and excludes exited investments**. The analysis therefore represents a snapshot of the active portfolio and should not be interpreted as complete historical vintage or manager performance.
 
 Older vintages are particularly affected, as fully realized and exited partnerships may no longer appear in the dataset. Performance reported by CalPERS as `N/M (Not Meaningful)` is excluded from performance-based analysis.
 
