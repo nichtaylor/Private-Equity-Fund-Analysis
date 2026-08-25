@@ -118,3 +118,28 @@ SELECT
 FROM ranked_funds
 WHERE irr_rank <= 10
     OR multiple_rank <= 10;
+
+
+-- 9. Concentration of value above contributed capital
+
+WITH ranked_funds AS (
+    SELECT
+        total_value - cash_in AS value_above_contributed_capital,
+        ROW_NUMBER() OVER (ORDER BY total_value - cash_in DESC) AS fund_rank,
+        COUNT(*) OVER () AS total_funds
+    FROM `pe-fund-insights-project.calpers_pe.fund_analysis`
+    WHERE cash_in > 0
+)
+
+SELECT
+    total_funds,
+    ROUND(100 * SUM(IF(fund_rank <= CEIL(total_funds * 0.20), value_above_contributed_capital, 0))
+        / SUM(value_above_contributed_capital), 1) AS top_20_pct_share,
+    ROUND(100 * SUM(IF(fund_rank <= CEIL(total_funds * 0.50), value_above_contributed_capital, 0))
+        / SUM(value_above_contributed_capital), 1) AS top_50_pct_share,
+    ROUND(100 * SUM(IF(fund_rank > CEIL(total_funds * 0.50), value_above_contributed_capital, 0))
+        / SUM(value_above_contributed_capital), 1) AS bottom_50_pct_share,
+    ROUND(100 * COUNTIF(fund_rank > CEIL(total_funds * 0.50) AND value_above_contributed_capital > 0)
+        / COUNTIF(fund_rank > CEIL(total_funds * 0.50)), 1) AS bottom_50_above_cost_pct
+FROM ranked_funds
+GROUP BY total_funds;
