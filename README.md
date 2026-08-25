@@ -14,7 +14,7 @@ Among vintages with sufficient observations (≥5 funds), 2017 has the highest m
 
 **3. Portfolio value creation is heavily concentrated among a subset of active funds**
 
-As of September 2025, the top 20% of active funds account for 68.6% of the portfolio's net value above contributed capital (_total value less cash in_), while the top half account for 96.9%. Although most funds in the bottom half remain above cost, they collectively account for just 3.1%.
+As of September 2025, the top 20% of active funds account for 68.6% of the portfolio's net value above contributed capital (_total value - cash in_), while the top half account for 96.9%. Although most funds in the bottom half remain above cost, they collectively account for just 3.1%.
 
 ## About the Project
 
