@@ -41,7 +41,7 @@ Manager level comparisons require at least three active funds with reported perf
 
 The CalPERS Fund Performance Review contains **active investments only and excludes exited investments**. The analysis therefore represents a snapshot of the active portfolio and should not be interpreted as complete historical vintage or manager performance.
 
-Older vintages are particularly affected, as fully realized and exited partnerships may no longer appear in the dataset. Performance reported by CalPERS as N/M (Not Meaningful) is excluded from performance-based analysis.
+This particularly affects older vintages, where exited partnerships are excluded and the remaining active funds represent only a subset of the original vintage. Performance reported by CalPERS as N/M (Not Meaningful) is excluded from performance-based analysis.
 
 ## Repository Structure
 
