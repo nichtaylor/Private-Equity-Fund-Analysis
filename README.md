@@ -63,7 +63,7 @@ Private-Equity-Fund-Analysis/
 
 ## Data Source & Disclaimer
 
-This independent, non-commercial portfolio project uses publicly available information from the California Public Employees' Retirement System (CalPERS) for educational purposes. The underlying CalPERS dataset is not redistributed in this repository and should be obtained directly from CalPERS.
+This independent non-commercial portfolio project uses publicly available information from the California Public Employees' Retirement System (CalPERS) for educational purposes. The underlying CalPERS dataset is not redistributed in this repository and should be obtained directly from CalPERS.
 
 Manager mappings, SQL transformations, calculations and analysis were prepared independently for this project and do not represent analysis or conclusions produced by CalPERS.
 
