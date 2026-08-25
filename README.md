@@ -67,4 +67,4 @@ This independent non-commercial portfolio project uses publicly available inform
 
 Manager mappings, SQL transformations, calculations and analysis were prepared independently for this project and do not represent analysis or conclusions produced by CalPERS.
 
-CalPERS is a trademark of the California Public Employees' Retirement System. This project is not affiliated with, sponsored by or endorsed by CalPERS.
+This project is not affiliated with, sponsored by or endorsed by CalPERS.
