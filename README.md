@@ -8,13 +8,9 @@ SQL analysis of 462 active CalPERS private equity funds using Google BigQuery, e
 
 Manager commitment size shows little relationship with observed performance, with correlations of just 0.11 with median Net IRR and 0.19 with median Investment Multiple. Several of the strongest-performing manager relationships also sit outside CalPERS' largest exposures.
 
-**2. Performance varies substantially even across repeat manager relationships**
+**2. The 2017 vintage emerges as the clear performance standout across active funds**
 
-Among managers with at least three measurable active funds, median Investment Multiples range from 0.9x to 2.1x, while median Net IRRs range from -1.3% to 27.1%.
-
-**3. Strong multiple outcomes are concentrated in a relatively small share of active funds**
-
-Among 264 active funds with reported Investment Multiples, 92.8% are at or above cost, but only 17.8% have reached 2.0x+ and 4.2% have reached 3.0x+.
+Among vintages with sufficient observations, 2017 has the highest median Net IRR at 18.7% and Investment Multiple at 2.3x, alongside the highest lower-quartile multiple at 1.9x, with 66.7% of funds reaching 2.0x or above.
 
 ## About the Project
 
