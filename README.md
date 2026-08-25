@@ -4,13 +4,17 @@ SQL analysis of 462 active CalPERS private equity funds using Google BigQuery, e
 
 ## Key Findings
 
-**1. CalPERS' largest manager relationships are not its strongest-performing relationships**
+**1. CalPERS' largest manager relationships do not correspond to its strongest performing relationships**
 
 Manager commitment size shows little relationship with observed performance, with correlations of just 0.11 with median Net IRR and 0.19 with median Investment Multiple. Several of the strongest-performing manager relationships also sit outside CalPERS' largest exposures.
 
 **2. The 2017 vintage emerges as the clear performance standout across active funds**
 
-Among vintages with sufficient observations, 2017 has the highest median Net IRR at 18.7% and Investment Multiple at 2.3x, alongside the highest lower-quartile multiple at 1.9x, with 66.7% of funds reaching 2.0x or above.
+Among vintages with sufficient observations (≥5 funds), 2017 has the highest median Net IRR at 18.7% and Investment Multiple at 2.3x, alongside the highest lower-quartile multiple at 1.9x, with 66.7% of funds reaching 2.0x or above.
+
+**3. Portfolio value creation is heavily concentrated among a subset of active funds**
+
+As of September 2025, the top 20% of active funds account for 68.6% of the portfolio's **net value above contributed capital (total value less cash in)**, while the top half account for 96.9%. Although most funds in the bottom half remain above cost, they collectively account for just 3.1%.
 
 ## About the Project
 
@@ -33,7 +37,7 @@ The project follows an end-to-end SQL workflow:
 
 Manager performance comparisons require at least three active funds with reported performance, reducing the influence of individual fund outcomes.
 
-## Important Limitation
+## Limitations
 
 The CalPERS Fund Performance Review contains **active investments only and excludes exited investments**. The analysis therefore represents a snapshot of the active portfolio and should not be interpreted as complete historical vintage or manager performance.
 
