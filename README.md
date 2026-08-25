@@ -14,7 +14,7 @@ Among vintages with sufficient observations (≥5 funds), 2017 has the highest m
 
 **3. Portfolio value creation is heavily concentrated among a subset of active funds**
 
-As of September 2025, the top 20% of active funds account for 68.6% of the portfolio's **net value above contributed capital (total value less cash in)**, while the top half account for 96.9%. Although most funds in the bottom half remain above cost, they collectively account for just 3.1%.
+As of September 2025, the top 20% of active funds account for 68.6% of the portfolio's net value above contributed capital (_total value less cash in_), while the top half account for 96.9%. Although most funds in the bottom half remain above cost, they collectively account for just 3.1%.
 
 ## About the Project
 
@@ -31,17 +31,17 @@ A separate manager mapping dataset was created to link individual funds to their
 
 ## Approach
 
-The project follows an end-to-end SQL workflow:
+The analysis follows a structured SQL workflow:
 
-**Raw data → quality checks → cleaning → manager enrichment → metric validation → portfolio, performance, vintage and manager analysis**
+**Raw data → data quality checks → cleaning and standardization → fund-manager mapping → metric validation → portfolio, performance, vintage and manager analysis**
 
-Manager performance comparisons require at least three active funds with reported performance, reducing the influence of individual fund outcomes.
+Manager level comparisons require at least three active funds with reported performance to reduce the influence of individual fund outcomes.
 
 ## Limitations
 
 The CalPERS Fund Performance Review contains **active investments only and excludes exited investments**. The analysis therefore represents a snapshot of the active portfolio and should not be interpreted as complete historical vintage or manager performance.
 
-Older vintages are particularly affected, as fully realized and exited partnerships may no longer appear in the dataset. Performance reported by CalPERS as `N/M (Not Meaningful)` is excluded from performance-based analysis.
+Older vintages are particularly affected, as fully realized and exited partnerships may no longer appear in the dataset. Performance reported by CalPERS as N/M (Not Meaningful) is excluded from performance-based analysis.
 
 ## Repository Structure
 
