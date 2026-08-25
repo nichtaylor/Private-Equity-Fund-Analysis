@@ -23,7 +23,7 @@ This project analyzes publicly available fund-level data from the [CalPERS Priva
 The analysis uses the portfolio snapshot as of **September 30, 2025** and examines:
 
 - Portfolio composition and commitment concentration
-- Fund performance and return dispersion
+- Fund performance, return dispersion and value creation concentration
 - Performance and realization across vintages
 - Manager performance, consistency and exposure
 
