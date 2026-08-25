@@ -35,7 +35,7 @@ The analysis follows a structured SQL workflow:
 
 **Raw data → data quality checks → cleaning and standardization → fund manager mapping → metric validation → portfolio, performance, vintage and manager analysis**
 
-Manager level comparisons require at least three active funds with reported performance to reduce the influence of individual fund outcomes.
+Manager level performance comparisons include only managers with at least three active funds with reported performance to reduce the influence of individual fund outcomes.
 
 ## Limitations
 
