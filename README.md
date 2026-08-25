@@ -6,7 +6,7 @@ SQL analysis of 462 active CalPERS private equity funds using Google BigQuery, e
 
 **1. CalPERS' largest manager relationships do not correspond to its strongest performing relationships**
 
-Manager commitment size shows little relationship with observed performance, with correlations of just 0.11 with median Net IRR and 0.19 with median Investment Multiple. Several of the strongest-performing manager relationships also sit outside CalPERS' largest exposures.
+Manager commitment size shows little relationship with observed performance, with correlations of just 0.11 with median Net IRR and 0.19 with median Investment Multiple.
 
 **2. The 2017 vintage emerges as the clear performance standout across active funds**
 
