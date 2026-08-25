@@ -44,3 +44,21 @@ FROM `pe-fund-insights-project.calpers_pe.fund_analysis`
 WHERE total_value > 0
 GROUP BY vintage_year
 ORDER BY vintage_year;
+
+
+-- 4. Identify vintages with strong and consistent fund performance
+
+SELECT
+    vintage_year,
+    COUNT(*) AS fund_count,
+    ROUND(100 * APPROX_QUANTILES(net_irr, 4)[OFFSET(1)], 1) AS net_irr_q1_pct,
+    ROUND(100 * APPROX_QUANTILES(net_irr, 4)[OFFSET(2)], 1) AS median_net_irr_pct,
+    ROUND(APPROX_QUANTILES(investment_multiple, 4)[OFFSET(1)], 2) AS multiple_q1,
+    ROUND(APPROX_QUANTILES(investment_multiple, 4)[OFFSET(2)], 2) AS median_multiple,
+    ROUND(100 * COUNTIF(investment_multiple >= 2.0) / COUNT(*), 1) AS above_2x_pct
+FROM `pe-fund-insights-project.calpers_pe.fund_analysis`
+WHERE net_irr IS NOT NULL
+    AND investment_multiple IS NOT NULL
+GROUP BY vintage_year
+HAVING COUNT(*) >= 5
+ORDER BY median_multiple DESC;
